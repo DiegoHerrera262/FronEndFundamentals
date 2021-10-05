@@ -1,0 +1,33 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Ubuntu&display=swap";
+
+$primary-font: "Code Next", "Ubuntu", Arial;
+$secondary-font: "Biotif Bold", "Roboto", sans-serif;
+
+$root-font-size: (
+  "sm": 16px,
+  "md": 16px,
+  "lg": 18px,
+  "xl": 20px,
+);
+
+$title-font-size: (
+  "sm": 32px,
+  "md": 32px,
+  "lg": 50px,
+  "xl": 70px,
+);
+
+$subtitle-font-size: (
+  "sm": 28px,
+  "md": 28px,
+  "lg": 40px,
+  "xl": 40px,
+);
+
+$inner-font-size: (
+  "sm": 28px,
+  "md": 28px,
+  "lg": 40px,
+  "xl": 40px,
+);

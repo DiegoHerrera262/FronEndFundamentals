@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Diego Herrera's site</title>
+        <meta name="description" content="Hi! I'm a physicist interest in quantum computing, quantum physics and web development. This is my personal website, where you can find my latest work and more detailed info about me."/>
+        <meta name="keywords" content="qiskit, quantum computing, quantum physics, machine learning, UNAL"/>
+        <meta name="author" content="Diego Herrera" />
+
+        <link rel="shortcut icon" href="./img/favicon.svg"/>
+        <link rel="stylesheet" href="./css/main.min.css"/>
+
+    </head>
+    <body>
+        <!--SVG Sprite-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+            <defs>
+                <symbol id="hamburgerIcon" viewBox="0 0 24 24">
+                    <path
+                        d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z" 
+                    />
+                </symbol>
+                <symbol id="github" viewBox="0 0 24 24">
+                    <title>GitHub</title>
+                    <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </symbol>
+                <symbol id="instagram" viewBox="0 0 24 24">
+                    <title>Instagram</title>
+                    <path
+                        d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                </symbol>
+                <symbol id="facebook" viewBox="0 0 24 24">
+                    <title>Facebook</title>
+                    <path
+                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </symbol>
+                <symbol id="homeButton" viewBox="0 0 669.91 775.69">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                                stroke-width: 3px;
+                            }
+                    
+                            .cls-1,
+                            .cls-2 {
+                                stroke: #231f20;
+                                stroke-miterlimit: 10;
+                            }
+                    
+                            .cls-2 {
+                                fill: none;
+                                stroke-width: 6px;
+                            }
+                        </style>
+                    </defs>
+                    <path class="cls-1"
+                        d="M457,400.66a387.53,387.53,0,0,1-2.14,40.81A280.25,280.25,0,0,0,331.49,483a274.35,274.35,0,0,0-.22-165.39,279.8,279.8,0,0,0,123.51,41.92A385.12,385.12,0,0,1,457,400.66Z"
+                        transform="translate(-65.05 -12.16)" />
+                    <path class="cls-1"
+                        d="M71.27,127.79c-1.58,0-3.15,0-4.72,0V15c1.57,0,3.15,0,4.72,0a384.92,384.92,0,0,1,131.4,23C338.65,87.2,439,210.73,454.78,359.54a279.49,279.49,0,0,1-123.51-41.92A273.38,273.38,0,0,0,213.9,168,271.47,271.47,0,0,0,71.27,127.79Z"
+                        transform="translate(-65.05 -12.16)" />
+                    <path class="cls-1"
+                        d="M454.82,441.47c-15.68,149.07-116.29,272.84-252.55,322a384.65,384.65,0,0,1-131,22.82c-1.57,0-3.15,0-4.72,0V673.47c1.57,0,3.14,0,4.72,0A271.58,271.58,0,0,0,213.2,633.75,273.61,273.61,0,0,0,331.49,483,279.62,279.62,0,0,1,454.82,441.47Z"
+                        transform="translate(-65.05 -12.16)" />
+                    <path class="cls-1" d="M733.45,203.89V598.1A282.84,282.84,0,0,0,612.73,473.2V328.1A282.65,282.65,0,0,0,733.45,203.89Z"
+                        transform="translate(-65.05 -12.16)" />
+                    <path class="cls-2" d="M248.65,316.27" transform="translate(-65.05 -12.16)" />
+                    <path class="cls-1" d="M733.45,13.66V203.89A282.68,282.68,0,0,1,612.73,328.1V13.66Z"
+                        transform="translate(-65.05 -12.16)" />
+                    <path class="cls-1" d="M733.45,598.1V785H612.73V473.2A282.63,282.63,0,0,1,733.45,598.1Z"
+                        transform="translate(-65.05 -12.16)" />
+                    <path class="cls-1"
+                        d="M612.73,328.1V473.2a280.2,280.2,0,0,0-132.16-32.89q-13,0-25.75,1.16A387.53,387.53,0,0,0,457,400.66a385.12,385.12,0,0,0-2.18-41.12c8.65.81,17.42,1.22,26.26,1.22A280.13,280.13,0,0,0,612.73,328.1Z"
+                        transform="translate(-65.05 -12.16)" />
+                </symbol>
+                <symbol id="close-cross" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" 
+                    />
+                </symbol>
+            </defs>
+        </svg>
+
+        <!--Navigation bar-->
+        <nav>
+            <ul class="main-menu-container">
+                <li><a class="navbar-button navbar-button__selected" href="#">Home</a></li>
+                <li><a class="navbar-button" href="#">Projects</a></li>
+                <li><a class="navbar-button" href="#">Blog</a></li>
+                <li><a class="navbar-button" href="#">About</a></li>
+            </ul>
+            <div class="home-button-container">
+                <a class="home-button-link" href="#">
+                    <svg class="home-button">
+                        <use xlink:href="#homeButton" href="#homeButton"></use>
+                    </svg>
+                </a>
+            </div>
+            <ul class="social-menu-container">
+                <li>
+                    <a class="contact-link" href="#" onclick="triggerContactForm()">Contact</a>
+                </li>
+                <li>
+                    <a class="icon-container" href="#">
+                        <svg class="social-icon">
+                            <use xlink:href="#github" href="#github"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="icon-container" href="#">
+                        <svg class="social-icon">
+                            <use xlink:href="#instagram" href="#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="icon-container" href="#">
+                        <svg class="social-icon">
+                            <use xlink:href="#facebook" href="#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger-icon-container">
+                <a id="hamburger-trigger" class="hamburger-icon-link"
+                href="#" onclick="triggerDropdown()">
+                    <svg class="hamburger-icon">
+                        <use xlink:href="#hamburgerIcon" href="#hamburgerIcon"></use>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+
+        <!--Dropdown menu-->
+        <div id="dropdown-menu" class="dropdown-menu-container">
+            <a onclick="closeDropdown()" class="close-icon-container" href="#">
+                <svg class="close-icon">
+                    <use xlink:href="#close-cross" href="#close-cross"></use>
+                </svg>
+            </a>
+            <ul class="dropdown-menu-list__main">
+                <li><a class="dropdown-menu__link dropdown-menu__link-selected" href="#">Home</a></li>
+                <li><a class="dropdown-menu__link" href="#">Projects</a></li>
+                <li><a class="dropdown-menu__link" href="#">Blog</a></li>
+                <li><a class="dropdown-menu__link" href="#">About</a></li>
+            </ul>
+            <ul class="dropdown-menu-list__social">
+                <li>
+                    <a class="icon-container" href="#">
+                        <svg class="social-icon">
+                            <use xlink:href="#github" href="#github"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="icon-container" href="#">
+                        <svg class="social-icon">
+                            <use xlink:href="#instagram" href="#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="icon-container" href="#">
+                        <svg class="social-icon">
+                            <use xlink:href="#facebook" href="#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Main content-->
+        <main class="home-main-content">
+            <section id="home-landing-view">
+                <div class="home-main-title-container">
+                    <h1 class="home-main-title__greeting">
+                        Hi, I'm Diego. A physicist.
+                    </h1>
+                    <p class="home-main-title__description">
+                        I'm also a web development enthusiast, with some experience in the industry; Always eager to learn and contribute to science and technology. <mark>Scroll to see more or...</mark>
+                    </p>
+                    <a class="generic-button" href="#">
+                        Click to know more
+                    </a>
+                </div>
+                <div class="home-main-image-container">
+                    <img class="home-main-image__image" src="./img/HomePageHero.svg"/>
+                </div>
+            </section>
+            <!--
+            <section id="home-projects-section">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae voluptatibus debitis, laborum eligendi numquam enim libero facilis blanditiis commodi dolore temporibus illum natus magni vel aut quasi nobis atque itaque eius officiis quas? Deserunt, voluptatibus distinctio. Eligendi, ea rem!
+            </section>
+            <section id="home-blog-section">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas laborum, dolor tempore exercitationem eaque tempora. Dolorem quaerat sed facere aspernatur aut molestiae quidem minima similique eum magnam ipsa nobis amet, veniam nemo necessitatibus, eaque ut possimus? Quasi perferendis adipisci quo obcaecati, in eaque cupiditate necessitatibus, error recusandae doloremque consectetur.
+            </section>
+            <section id="home-contact-link">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates corrupti necessitatibus distinctio. Repudiandae perferendis, omnis necessitatibus harum aut eligendi? Corrupti eligendi saepe pariatur quos iusto deleniti harum eaque. Eum aliquam veritatis facilis officiis tempora tenetur, quos, totam inventore similique temporibus alias, modi nulla veniam maxime voluptas obcaecati voluptatibus asperiores?
+            </section>
+            -->
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer-logo-container">
+                <a class="footer-logo__letter-logo" href="#">
+                    Diego A. Herrera R.
+                </a>
+            </div>
+            <div class="footer-affiliation-container">
+                <p>National University of Colombia</p>
+                <p>Physics Student</p>
+                <p>Bogotá D. C.</p>
+            </div>
+            <div class="footer-contact-container">
+                <p>degoherrera262@gmail.com</p>
+                <p>dieaherreraroj@unal.edu.co</p>
+            </div>
+            <div class="footer-contact-link-container">
+                <a class="footer-contact__contact-link" href="#">
+                    Contact me
+                </a>
+            </div>
+        </footer>
+
+        <!--Scripts and other includes-->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

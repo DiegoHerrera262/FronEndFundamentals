@@ -1,0 +1,41 @@
+@import "../_variables/colors.scss";
+@import "../mixins.scss";
+
+.home-button-container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 0 0 0 auto;
+  width: 42%;
+  height: 40px;
+}
+
+.home-button-link {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  transition: width, height, 150ms;
+
+  &:hover {
+    width: 45px;
+    height: 45px;
+  }
+
+  &:hover .home-button {
+    fill: $primary-color;
+  }
+}
+
+.home-button {
+  fill: $white;
+  transition: fill, 150ms;
+}
+
+@include media-lg {
+  .home-button-container {
+    margin: 0;
+    width: 30%;
+    justify-content: center;
+  }
+}

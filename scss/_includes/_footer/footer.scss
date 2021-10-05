@@ -1,0 +1,100 @@
+@import "../_variables/colors";
+@import "../mixins.scss";
+
+footer {
+  width: 100%;
+  height: 360px;
+  margin: 0;
+  padding: 2em;
+  box-sizing: border-box;
+  display: grid;
+  grid-auto-rows: 1fr;
+
+  div {
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.footer-logo__letter-logo {
+  font-size: 1.7em;
+  color: $primary-color;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.footer-affiliation-container {
+  p {
+    font-family: $primary-font;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1em;
+    margin: 0.5em auto;
+  }
+}
+
+.footer-contact-container {
+  text-align: center;
+
+  p {
+    font-family: $primary-font;
+    font-size: 0.9rem;
+    color: $primary-color;
+    text-align: center;
+    line-height: 1em;
+    margin: 0.5em auto;
+  }
+}
+
+.footer-contact-link-container {
+  text-align: center;
+}
+
+.footer-contact__contact-link {
+  font-family: $primary-font;
+  font-size: 1.1em;
+  color: $white;
+
+  &:hover {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+@include media-md {
+  footer {
+    height: 220px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "a a b b"
+      "c c d d";
+  }
+  .footer-logo-container {
+    grid-area: a;
+  }
+  .footer-affiliation-container {
+    grid-area: c;
+  }
+  .footer-contact-container {
+    grid-area: b;
+  }
+  .footer-contact-link-container {
+    grid-area: d;
+  }
+}
+
+@include media-lg {
+  footer {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "a a c c b b"
+      "a a c c d d";
+  }
+}

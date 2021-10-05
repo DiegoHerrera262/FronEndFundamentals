@@ -1,0 +1,95 @@
+@import "../_variables/colors.scss";
+
+$menu-separation: 80px;
+
+.dropdown-menu-container {
+  width: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-height: 760px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  background-color: $dark-gray;
+  z-index: 100;
+  transition: width, 250ms;
+}
+
+.close-icon-container {
+  overflow: hidden;
+  display: inline-flex;
+  margin: 0 0 $menu-separation 0;
+  height: 30px;
+  width: 30px;
+
+  &:hover .close-icon {
+    fill: $primary-color;
+  }
+}
+
+.close-icon {
+  fill: $white;
+  transition: fill, 150ms;
+}
+
+.dropdown-menu-list__main {
+  list-style-type: none;
+  width: 100%;
+
+  li {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.dropdown-menu__link {
+  padding: 0.5em 0.1em 0.5em 0.1em;
+  color: $white;
+  border-bottom: 3px solid $white;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+.dropdown-menu__link-selected {
+  border-bottom: 3px solid $primary-color;
+}
+
+.dropdown-menu-list__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: $menu-separation 0 0 0;
+  list-style-type: none;
+  width: 100%;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 33%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@include media-lg {
+  .dropdown-menu-container {
+    display: none;
+  }
+}

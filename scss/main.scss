@@ -1,0 +1,83 @@
+@import "_includes/_variables/colors";
+@import "_includes/_variables/fonts";
+@import "_includes/mixins";
+
+body {
+  position: relative;
+  background: $black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $generic-text-color;
+  font-family: $secondary-font;
+  font-size: map-get($root-font-size, sm);
+}
+
+a {
+  color: $links-color;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: $primary-font;
+  font-size: map-get($title-font-size, sm);
+  color: $primary-color;
+}
+
+.generic-button {
+  background-color: $primary-color;
+  color: $white;
+  padding: 12px 24px;
+  border-radius: 20px;
+  border: none;
+
+  &:hover {
+    background-color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+@include media-md {
+  body {
+    font-size: map-get($root-font-size, md);
+  }
+  h1 {
+    font-size: map-get($title-font-size, md);
+  }
+}
+
+@include media-lg {
+  body {
+    font-size: map-get($root-font-size, lg);
+  }
+  h1 {
+    font-size: map-get($title-font-size, lg);
+  }
+}
+
+@include media-xl {
+  body {
+    font-size: map-get($root-font-size, xl);
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: map-get($title-font-size, xl);
+  }
+}
+
+/*
+Shared elements
+*/
+@import "./_includes/_navbar/navbar";
+@import "./_includes/_dropdown/dropdown-menu";
+@import "./_includes/_footer/footer";
+
+/*
+Page stylings
+*/
+@import "./_includes/_pages/home.scss";

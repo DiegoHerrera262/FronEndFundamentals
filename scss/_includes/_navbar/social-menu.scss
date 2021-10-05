@@ -1,0 +1,57 @@
+@import "../_variables/colors";
+@import "../mixins.scss";
+
+.social-menu-container {
+  display: none;
+  list-style-type: none;
+  width: 30%;
+  margin: 0 auto 0 0;
+
+  li {
+    height: 40px;
+    width: 23%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 0.1em 0.5em 0.1em;
+  color: $white;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+.icon-container {
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+
+  &:hover .social-icon {
+    fill: $primary-color;
+  }
+}
+
+.social-icon {
+  fill: $white;
+  transition: fill, 150ms;
+}
+
+@include media-lg {
+  .social-menu-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

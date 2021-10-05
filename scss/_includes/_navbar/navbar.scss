@@ -1,0 +1,34 @@
+@import "../_variables/colors.scss";
+@import "../mixins.scss";
+
+nav,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 110px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 7;
+  background-color: $black;
+}
+
+@include media-md {
+  nav {
+    height: 130px;
+  }
+}
+
+@import "./home-button.scss";
+@import "./main-menu";
+@import "./social-menu";
+@import "./hamburger-icon";

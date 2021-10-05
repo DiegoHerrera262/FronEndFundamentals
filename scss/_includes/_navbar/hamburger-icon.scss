@@ -1,0 +1,34 @@
+@import "../_variables/colors.scss";
+@import "../mixins.scss";
+
+.hamburger-icon-container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 0 auto 0 0;
+  width: 42%;
+  height: 40px;
+}
+
+.hamburger-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+
+  &:hover .hamburger-icon {
+    fill: $primary-color;
+  }
+}
+
+.hamburger-icon {
+  fill: $white;
+}
+
+@include media-lg {
+  .hamburger-icon-container {
+    display: none;
+  }
+}
