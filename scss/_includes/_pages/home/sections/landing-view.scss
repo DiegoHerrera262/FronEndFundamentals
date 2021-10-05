@@ -1,11 +1,6 @@
-@import "../_variables/fonts";
-@import "../_variables/colors";
-@import "../mixins.scss";
-
-.home-main-content {
-  max-width: 85%;
-  margin: 0 auto;
-}
+@import "../../../_variables/fonts";
+@import "../../../_variables/colors";
+@import "../../../mixins.scss";
 
 #home-landing-view {
   padding: 0.5em;
@@ -62,6 +57,13 @@
 
   .home-main-image-container {
     width: 50%;
+  }
+}
+
+@include media-md {
+  #home-landing-view {
+    margin: 190px auto;
+    margin-bottom: 100px;
   }
 }
 

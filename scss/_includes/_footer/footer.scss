@@ -68,7 +68,7 @@ footer {
   footer {
     height: 220px;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    gap: 10px;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
       "a a b b"

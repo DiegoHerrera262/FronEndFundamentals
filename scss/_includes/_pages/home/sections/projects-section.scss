@@ -1,0 +1,134 @@
+@import "../../../_variables/fonts";
+@import "../../../_variables/colors";
+@import "../../../mixins.scss";
+
+#home-projects-section {
+  padding: 0.5em;
+  margin: 90px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-projects-title-container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: center;
+  min-height: 150px;
+}
+
+.home-projects-title__heading {
+  font-size: map-get($title-font-size, sm);
+}
+
+.home-projects-cards-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 30px;
+
+  a {
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.home-projects__card {
+  width: 286px;
+  color: $white;
+  height: 109px;
+  background-color: $bg-emphasized;
+  overflow: hidden;
+  border-radius: 36px;
+  box-shadow: 4px -4px 2px $darkish-white inset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    text-decoration: none;
+    .project-icon g {
+      fill: $white;
+    }
+    .home-projects__card-text {
+      color: $links-color;
+    }
+    .topic-first-name {
+      transform: translate(-0.5ch);
+    }
+    .topic-last-name {
+      transform: translate(0.5ch);
+    }
+  }
+}
+
+.home-projects__card-icon-container {
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+}
+
+.home-projects__card-text {
+  font-size: map-get($inner-font-size, sm);
+  margin-left: 0.5ch;
+
+  p {
+    line-height: 1em;
+    margin: 0.5em;
+  }
+}
+
+.topic-first-name,
+.topic-last-name {
+  transition: transform 500ms;
+}
+
+@include media-md {
+  #home-projects-section {
+    margin: 150px auto;
+    margin-bottom: 50px;
+  }
+
+  .home-projects-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@include media-md {
+  .home-projects-title__heading {
+    font-size: map-get($title-font-size, md);
+  }
+  .home-projects__card-text {
+    font-size: map-get($inner-font-size, md);
+  }
+}
+
+@include media-lg {
+  .home-projects-title__heading {
+    font-size: map-get($title-font-size, lg);
+  }
+  #home-projects-section {
+    margin: 190px auto;
+  }
+}
+
+@include media-xl {
+  .home-projects-title__heading {
+    font-size: map-get($title-font-size, xl);
+  }
+  .home-projects__card {
+    width: 400px;
+    height: 152px;
+  }
+  .home-projects-cards-container {
+    max-width: 1300px;
+    gap: 100px;
+  }
+  .home-projects__card-text {
+    font-size: map-get($inner-font-size, lg);
+  }
+}

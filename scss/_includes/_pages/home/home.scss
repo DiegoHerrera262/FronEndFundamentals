@@ -1,0 +1,11 @@
+@import "../../_variables/fonts";
+@import "../../_variables/colors";
+@import "../../mixins.scss";
+
+.home-main-content {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+@import "./sections/landing-view";
+@import "./sections/projects-section";
