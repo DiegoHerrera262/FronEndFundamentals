@@ -136,6 +136,24 @@
                         </g>
                     </g>
                 </symbol>
+                <symbol viewBox="0 0 30 30" id="right-arrow-button" data-name="right-arrow-button"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path id="Path_211" data-name="Path 211"
+                        d="M16,1A15,15,0,1,0,31,16,15.007,15.007,0,0,0,16,1Zm0,2A13,13,0,1,1,3,16,13.006,13.006,0,0,1,16,3Z"
+                        transform="translate(-1 -1)" />
+                    <path id="Path_212" data-name="Path 212"
+                        d="M12.293,10.707,17.586,16l-5.293,5.293a1,1,0,0,0,1.414,1.414l6-6a1,1,0,0,0,0-1.414l-6-6a1,1,0,0,0-1.414,1.414Z"
+                        transform="translate(-1 -1)" />
+                </symbol>
+                <symbol viewBox="0 0 30 30" id="left-arrow-button" data-name="left-arrow-button"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path id="Path_207" data-name="Path 207"
+                        d="M16,1A15,15,0,1,0,31,16,15.007,15.007,0,0,0,16,1Zm0,2A13,13,0,1,1,3,16,13.006,13.006,0,0,1,16,3Z"
+                        transform="translate(-1 -1)"/>
+                    <path id="Path_208" data-name="Path 208"
+                        d="M19.707,21.293,14.414,16l5.293-5.293a1,1,0,0,0-1.414-1.414l-6,6a1,1,0,0,0,0,1.414l6,6a1,1,0,1,0,1.414-1.414Z"
+                        transform="translate(-1 -1)"/>
+                </symbol>
             </defs>
         </svg>
 
@@ -246,14 +264,14 @@
                     <img class="home-main-image__image" src="./img/HomePageHero.svg"/>
                 </div>
             </section>
-            <section id="home-projects-section">
-                <div class="home-projects-title-container">
-                    <h2 class="home-projects-title__heading">
+            <section class="home-section" id="home-projects-section">
+                <div class="home-section__title-container">
+                    <h2 class="home-section__title-heading">
                         Projects & Research
                     </h2>
                 </div>
                 <div class="home-projects-cards-container">
-                    <a class="home-projects__card" href="#">
+                    <a class="home-projects__card" href="#home-projects-section">
                         <div class="home-projects__card-icon-container">
                             <svg class="project-icon">
                                 <use xlink:href="#QP-Icon" href="#QP-Icon"></use>
@@ -264,7 +282,7 @@
                             <p class="topic-last-name">Physics</p>
                         </div>
                     </a>
-                    <a class="home-projects__card" href="#">
+                    <a class="home-projects__card" href="#home-projects-section">
                         <div class="home-projects__card-icon-container">
                             <svg class="project-icon">
                                 <use xlink:href="#QC-Icon" href="#QC-Icon"></use>
@@ -275,7 +293,7 @@
                             <p class="topic-last-name">Computing</p>
                         </div>
                     </a>
-                    <a class="home-projects__card" href="#">
+                    <a class="home-projects__card" href="#home-projects-section">
                         <div class="home-projects__card-icon-container">
                             <svg class="project-icon">
                                 <use xlink:href="#ML-Icon" href="#ML-Icon"></use>
@@ -286,7 +304,7 @@
                             <p class="topic-last-name">Learning</p>
                         </div>
                     </a>
-                    <a class="home-projects__card" href="#">
+                    <a class="home-projects__card" href="#home-projects-section">
                         <div class="home-projects__card-icon-container">
                             <svg class="project-icon">
                                 <use xlink:href="#CS-Icon" href="#CS-Icon"></use>
@@ -296,6 +314,111 @@
                             <p class="topic-first-name">Computer</p>
                             <p class="topic-last-name">Science</p>
                         </div>
+                    </a>
+                </div>
+            </section>
+            <section class="home-section" id="home-blog-section">
+                <div class="home-section__title-container">
+                    <h2 class="home-section__title-heading">
+                        Latest blog posts
+                    </h2>
+                </div>
+                <div class="home-blog-container">
+                    <a class="move-carousel-icon-container" id="move-left-carousel" href="#home-blog-section">
+                        <svg class="blog-carousel-button">
+                            <use xlink:href="#left-arrow-button" href="#left-arrow-button"></use>
+                        </svg>
+                    </a>
+                    <div class="blog-card__wrapper">
+                        <div class="blog-card inactive-post prev-post">
+                            <h3 class="blog-card__title">
+                                First quantization method
+                            </h3>
+                            <p class="blog-card__description">
+                                Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor sit
+                                amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
+                                explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis mollitia
+                                blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
+                            </p>
+                            <p>
+                                <a href="#home-blog-section">Read more</a>
+                            </p>
+                        </div>
+                        <div class="blog-card active-post">
+                            <h3 class="blog-card__title">
+                                Second quantization method
+                            </h3>
+                            <p class="blog-card__description">
+                                Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor sit
+                                amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
+                                explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis mollitia
+                                blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
+                            </p>
+                            <p>
+                                <a href="#home-blog-section">Read more</a>
+                            </p>
+                        </div>
+                        <div class="blog-card active-post second-post">
+                            <h3 class="blog-card__title">
+                                Third quantization method
+                            </h3>
+                            <p class="blog-card__description">
+                                Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor sit
+                                amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
+                                explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis mollitia
+                                blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
+                            </p>
+                            <p>
+                                <a href="#home-blog-section">Read more</a>
+                            </p>
+                        </div>
+                        <div class="blog-card active-post third-post">
+                            <h3 class="blog-card__title">
+                                Fourth quantization method
+                            </h3>
+                            <p class="blog-card__description">
+                                Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor sit
+                                amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
+                                explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis mollitia
+                                blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
+                            </p>
+                            <p>
+                                <a href="#home-blog-section">Read more</a>
+                            </p>
+                        </div>
+                        <div class="blog-card inactive-post next-post">
+                            <h3 class="blog-card__title">
+                                Fifth quantization method
+                            </h3>
+                            <p class="blog-card__description">
+                                Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor sit
+                                amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
+                                explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis mollitia
+                                blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
+                            </p>
+                            <p>
+                                <a href="#home-blog-section">Read more</a>
+                            </p>
+                        </div>
+                        <div class="blog-card inactive-post">
+                            <h3 class="blog-card__title">
+                                Sixth quantization method
+                            </h3>
+                            <p class="blog-card__description">
+                                Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor sit
+                                amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
+                                explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis mollitia
+                                blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
+                            </p>
+                            <p>
+                                <a href="#home-blog-section">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <a class="move-carousel-icon-container" id="move-right-carousel" href="#home-blog-section">
+                        <svg class="blog-carousel-button">
+                            <use xlink:href="#right-arrow-button" href="#right-arrow-button"></use>
+                        </svg>
                     </a>
                 </div>
             </section>

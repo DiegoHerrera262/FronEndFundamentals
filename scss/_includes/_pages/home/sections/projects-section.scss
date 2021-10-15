@@ -2,27 +2,6 @@
 @import "../../../_variables/colors";
 @import "../../../mixins.scss";
 
-#home-projects-section {
-  padding: 0.5em;
-  margin: 90px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.home-projects-title-container {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  text-align: center;
-  min-height: 150px;
-}
-
-.home-projects-title__heading {
-  font-size: map-get($title-font-size, sm);
-}
-
 .home-projects-cards-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -86,11 +65,6 @@
 }
 
 @include media-md {
-  #home-projects-section {
-    margin: 150px auto;
-    margin-bottom: 50px;
-  }
-
   .home-projects-cards-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -99,27 +73,12 @@
 }
 
 @include media-md {
-  .home-projects-title__heading {
-    font-size: map-get($title-font-size, md);
-  }
   .home-projects__card-text {
     font-size: map-get($inner-font-size, md);
   }
 }
 
-@include media-lg {
-  .home-projects-title__heading {
-    font-size: map-get($title-font-size, lg);
-  }
-  #home-projects-section {
-    margin: 190px auto;
-  }
-}
-
 @include media-xl {
-  .home-projects-title__heading {
-    font-size: map-get($title-font-size, xl);
-  }
   .home-projects__card {
     width: 400px;
     height: 152px;

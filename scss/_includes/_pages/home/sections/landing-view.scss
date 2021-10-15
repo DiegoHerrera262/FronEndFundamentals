@@ -3,6 +3,7 @@
 @import "../../../mixins.scss";
 
 #home-landing-view {
+  box-sizing: border-box;
   padding: 0.5em;
   margin: 90px auto;
 }

@@ -7,5 +7,53 @@
   margin: 0 auto;
 }
 
+.home-section {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 90px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-section__title-container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: center;
+  min-height: 150px;
+}
+
+.home-section__title-heading {
+  font-size: map-get($title-font-size, sm);
+}
+
+@include media-md {
+  .home-section {
+    margin: 150px auto;
+    margin-bottom: 50px;
+  }
+  .home-section__title-heading {
+    font-size: map-get($title-font-size, md);
+  }
+}
+
+@include media-lg {
+  .home-section {
+    margin: 190px auto;
+  }
+  .home-section__title-heading {
+    font-size: map-get($title-font-size, lg);
+  }
+}
+
+@include media-xl {
+  .home-section__title-heading {
+    font-size: map-get($title-font-size, xl);
+  }
+}
+
 @import "./sections/landing-view";
 @import "./sections/projects-section";
+@import "./sections/blog-section.scss";
