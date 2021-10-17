@@ -200,7 +200,7 @@
             </ul>
             <div class="hamburger-icon-container">
                 <a id="hamburger-trigger" class="hamburger-icon-link"
-                href="#" onclick="triggerDropdown()">
+                href="javascript:void(0)" onclick="triggerDropdown()">
                     <svg class="hamburger-icon">
                         <use xlink:href="#hamburgerIcon" href="#hamburgerIcon"></use>
                     </svg>
@@ -210,7 +210,7 @@
 
         <!--Dropdown menu-->
         <div id="dropdown-menu" class="dropdown-menu-container">
-            <a onclick="closeDropdown()" class="close-icon-container" href="#">
+            <a onclick="closeDropdown()" class="close-icon-container" href="javascript:void(0)">
                 <svg class="close-icon">
                     <use xlink:href="#close-cross" href="#close-cross"></use>
                 </svg>
@@ -261,7 +261,7 @@
                     </a>
                 </div>
                 <div class="home-main-image-container">
-                    <img class="home-main-image__image" src="./img/HomePageHero.svg"/>
+                    <img class="home-main-image__image" src="./img/HomePageHero.svg" alt="greeting-image"/>
                 </div>
             </section>
             <section class="home-section" id="home-projects-section">
@@ -324,13 +324,13 @@
                     </h2>
                 </div>
                 <div class="home-blog-container">
-                    <a class="move-carousel-icon-container" id="move-left-carousel" href="#home-blog-section">
+                    <a class="move-carousel-icon-container" id="move-left-carousel" href="javascript:void(0)" onclick="moveBlogSliderLeft()">
                         <svg class="blog-carousel-button">
                             <use xlink:href="#left-arrow-button" href="#left-arrow-button"></use>
                         </svg>
                     </a>
-                    <div class="blog-card__wrapper">
-                        <div class="blog-card inactive-post prev-post">
+                    <div id="home-blog-wrapper" class="blog-card__wrapper">
+                        <div class="blog-card inactive-post">
                             <h3 class="blog-card__title">
                                 First quantization method
                             </h3>
@@ -386,7 +386,7 @@
                                 <a href="#home-blog-section">Read more</a>
                             </p>
                         </div>
-                        <div class="blog-card inactive-post next-post">
+                        <div class="blog-card inactive-post">
                             <h3 class="blog-card__title">
                                 Fifth quantization method
                             </h3>
@@ -415,21 +415,26 @@
                             </p>
                         </div>
                     </div>
-                    <a class="move-carousel-icon-container" id="move-right-carousel" href="#home-blog-section">
+                    <a class="move-carousel-icon-container" id="move-right-carousel" href="javascript:void(0)" onclick="moveBlogSliderRight()">
                         <svg class="blog-carousel-button">
                             <use xlink:href="#right-arrow-button" href="#right-arrow-button"></use>
                         </svg>
                     </a>
                 </div>
             </section>
-            <!--
-            <section id="home-blog-section">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas laborum, dolor tempore exercitationem eaque tempora. Dolorem quaerat sed facere aspernatur aut molestiae quidem minima similique eum magnam ipsa nobis amet, veniam nemo necessitatibus, eaque ut possimus? Quasi perferendis adipisci quo obcaecati, in eaque cupiditate necessitatibus, error recusandae doloremque consectetur.
+            <section id="home-contact-view">
+                <div class="home-contact-title-container">
+                    <h1 class="home-contact-title__heading">
+                        Always open to learning.
+                    </h1>
+                    <p class="home-contact-title__description">
+                        Please reach out o me if you believe I can controbute to your team's projects. Just clik in <a href="#">this link</a>.
+                    </p>
+                </div>
+                <div class="home-contact-image-container">
+                    <img class="home-contact-image__image" src="./img/HomePageContactImage.svg" alt="contact-image" />
+                </div>
             </section>
-            <section id="home-contact-link">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates corrupti necessitatibus distinctio. Repudiandae perferendis, omnis necessitatibus harum aut eligendi? Corrupti eligendi saepe pariatur quos iusto deleniti harum eaque. Eum aliquam veritatis facilis officiis tempora tenetur, quos, totam inventore similique temporibus alias, modi nulla veniam maxime voluptas obcaecati voluptatibus asperiores?
-            </section>
-            -->
         </main>
 
         <!--Footer-->

@@ -11,6 +11,8 @@ Media queries
 @import "https://fonts.googleapis.com/css2?family=Ubuntu&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Ubuntu&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Ubuntu&display=swap";
 body {
   position: relative;
   background: #000000;
@@ -455,7 +457,8 @@ Media queries
 .home-main-title-container,
 .home-main-image-container {
   width: 100%;
-  margin: 1.5em auto; }
+  margin: 1.5em auto;
+  text-align: center; }
 
 .home-main-image-container {
   text-align: center; }
@@ -488,7 +491,8 @@ Media queries
     margin: 0 1em; }
 
   .home-main-title-container {
-    width: 50%; }
+    width: 50%;
+    text-align: left; }
 
   .home-main-image-container {
     width: 50%; } }
@@ -603,7 +607,7 @@ Media queries
 .blog-card__wrapper {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: space-around; }
 
 .blog-card {
   width: 200px;
@@ -644,19 +648,92 @@ Media queries
   #move-right-carousel {
     right: -130px; }
 
+  .blog-card__wrapper {
+    width: 80vw;
+    max-width: calc(610px + 16em); }
+
   .second-post,
   .third-post {
     display: flex; }
 
+  /*
   .second-post {
-    margin: 0 2em; }
-
+    margin: 0 2em;
+  }
+  */
   .blog-card {
     width: 210px;
     height: 380px; } }
 @media screen and (min-width: 1250px) {
+  .blog-card__wrapper {
+    width: 80vw;
+    max-width: calc(801px + 16em); }
+
   .blog-card {
     width: 267px;
     height: 390px; } }
+/*
+Media queries
+*/
+#home-contact-view {
+  box-sizing: border-box;
+  padding: 0.5em;
+  margin: 90px auto 50px auto; }
+
+.home-contact-title-container,
+.home-contact-image-container {
+  width: 100%;
+  margin: 1.5em auto;
+  text-align: center; }
+
+.home-contact-image-container {
+  text-align: center; }
+
+.home-contact-title-container {
+  margin-bottom: 4em; }
+  .home-contact-title-container mark {
+    color: #d377fc;
+    text-decoration: none;
+    background-color: transparent; }
+  .home-contact-title-container .home-contact-title__description {
+    padding: 1em 0 1.5em 0; }
+
+.home-contact-title__heading {
+  margin: 0; }
+
+.home-contact-image__image {
+  max-width: 800px; }
+
+@media screen and (min-width: 768px) {
+  #home-contact-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto; }
+
+  .home-contact-title-container,
+  .home-contact-image-container {
+    margin: 0 1em; }
+
+  .home-contact-title-container {
+    width: 50%;
+    text-align: left; }
+
+  .home-contact-image-container {
+    width: 50%; } }
+@media screen and (min-width: 768px) {
+  #home-contact-view {
+    margin: 190px auto;
+    margin-bottom: 100px; } }
+@media screen and (min-width: 1024px) {
+  #home-contact-view {
+    margin: 30px auto; }
+
+  .home-contact-title-container {
+    width: 40%; }
+
+  .home-contact-image-container {
+    width: 70%; } }
 
 /*# sourceMappingURL=main.min.css.map */

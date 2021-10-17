@@ -38,7 +38,7 @@
 .blog-card__wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .blog-card {
@@ -84,13 +84,19 @@
   #move-right-carousel {
     right: -130px;
   }
+  .blog-card__wrapper {
+    width: 80vw;
+    max-width: calc(610px + 16em);
+  }
   .second-post,
   .third-post {
     display: flex;
   }
+  /*
   .second-post {
     margin: 0 2em;
   }
+  */
   .blog-card {
     width: 210px;
     height: 380px;
@@ -98,6 +104,10 @@
 }
 
 @include media-xl {
+  .blog-card__wrapper {
+    width: 80vw;
+    max-width: calc(801px + 16em);
+  }
   .blog-card {
     width: 267px;
     height: 390px;
