@@ -174,7 +174,7 @@
             </div>
             <ul class="social-menu-container">
                 <li>
-                    <a class="contact-link" href="#" onclick="triggerContactForm()">Contact</a>
+                    <a class="contact-link" href="mailto:diegoherrera262@gmail.com">Contact</a>
                 </li>
                 <li>
                     <a class="icon-container" href="#">
@@ -323,103 +323,123 @@
                         Latest blog posts
                     </h2>
                 </div>
-                <div class="home-blog-container">
-                    <a class="move-carousel-icon-container" id="move-left-carousel" href="javascript:void(0)" onclick="moveBlogSliderLeft()">
-                        <svg class="blog-carousel-button">
-                            <use xlink:href="#left-arrow-button" href="#left-arrow-button"></use>
-                        </svg>
-                    </a>
-                    <div id="home-blog-wrapper" class="blog-card__wrapper">
-                        <div class="blog-card inactive-post">
-                            <h3 class="blog-card__title">
-                                First quantization method
-                            </h3>
-                            <p class="blog-card__description">
-                                Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor sit
-                                amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
-                                explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis mollitia
-                                blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
-                            </p>
-                            <p>
-                                <a href="#home-blog-section">Read more</a>
-                            </p>
-                        </div>
-                        <div class="blog-card active-post">
-                            <h3 class="blog-card__title">
-                                Second quantization method
-                            </h3>
-                            <p class="blog-card__description">
-                                Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor sit
-                                amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
-                                explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis mollitia
-                                blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
-                            </p>
-                            <p>
-                                <a href="#home-blog-section">Read more</a>
-                            </p>
-                        </div>
-                        <div class="blog-card active-post second-post">
-                            <h3 class="blog-card__title">
-                                Third quantization method
-                            </h3>
-                            <p class="blog-card__description">
-                                Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor sit
-                                amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
-                                explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis mollitia
-                                blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
-                            </p>
-                            <p>
-                                <a href="#home-blog-section">Read more</a>
-                            </p>
-                        </div>
-                        <div class="blog-card active-post third-post">
-                            <h3 class="blog-card__title">
-                                Fourth quantization method
-                            </h3>
-                            <p class="blog-card__description">
-                                Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor sit
-                                amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
-                                explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis mollitia
-                                blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
-                            </p>
-                            <p>
-                                <a href="#home-blog-section">Read more</a>
-                            </p>
-                        </div>
-                        <div class="blog-card inactive-post">
-                            <h3 class="blog-card__title">
-                                Fifth quantization method
-                            </h3>
-                            <p class="blog-card__description">
-                                Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor sit
-                                amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
-                                explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis mollitia
-                                blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
-                            </p>
-                            <p>
-                                <a href="#home-blog-section">Read more</a>
-                            </p>
-                        </div>
-                        <div class="blog-card inactive-post">
-                            <h3 class="blog-card__title">
-                                Sixth quantization method
-                            </h3>
-                            <p class="blog-card__description">
-                                Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor sit
-                                amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
-                                explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis mollitia
-                                blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
-                            </p>
-                            <p>
-                                <a href="#home-blog-section">Read more</a>
-                            </p>
+                <div class="carousel__container">
+                    <div class="carousel__list-container">
+                        <div id="home-carousel-window" class="carousel__list-window">
+                            <ul id="home-carousel-list" class="carousel__list">
+                                <li class="blog-card">
+                                    <h3 class="blog-card__title">
+                                        First quantization method
+                                    </h3>
+                                    <p class="blog-card__description">
+                                        Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor
+                                        sit
+                                        amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
+                                        explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis
+                                        mollitia
+                                        blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
+                                    </p>
+                                    <p>
+                                        <a href="#home-blog-section">Read more</a>
+                                    </p>
+                                </li>
+                                <li class="blog-card">
+                                    <h3 class="blog-card__title">
+                                        Second quantization method
+                                    </h3>
+                                    <p class="blog-card__description">
+                                        Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor
+                                        sit
+                                        amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
+                                        explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis
+                                        mollitia
+                                        blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
+                                    </p>
+                                    <p>
+                                        <a href="#home-blog-section">Read more</a>
+                                    </p>
+                                </li>
+                                <li class="blog-card">
+                                    <h3 class="blog-card__title">
+                                        Third quantization method
+                                    </h3>
+                                    <p class="blog-card__description">
+                                        Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor
+                                        sit
+                                        amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
+                                        explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis
+                                        mollitia
+                                        blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
+                                    </p>
+                                    <p>
+                                        <a href="#home-blog-section">Read more</a>
+                                    </p>
+                                </li>
+                                <li class="blog-card">
+                                    <h3 class="blog-card__title">
+                                        Fourth quantization method
+                                    </h3>
+                                    <p class="blog-card__description">
+                                        Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor
+                                        sit
+                                        amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
+                                        explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis
+                                        mollitia
+                                        blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
+                                    </p>
+                                    <p>
+                                        <a href="#home-blog-section">Read more</a>
+                                    </p>
+                                </li>
+                                <li class="blog-card">
+                                    <h3 class="blog-card__title">
+                                        Fifth quantization method
+                                    </h3>
+                                    <p class="blog-card__description">
+                                        Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor
+                                        sit
+                                        amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
+                                        explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis
+                                        mollitia
+                                        blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
+                                    </p>
+                                    <p>
+                                        <a href="#home-blog-section">Read more</a>
+                                    </p>
+                                </li>
+                                <li class="blog-card">
+                                    <h3 class="blog-card__title">
+                                        Sixth quantization method
+                                    </h3>
+                                    <p class="blog-card__description">
+                                        Some brief description of the post. Interesting and helpful. Lorem Epsom. Some more text. Lorem ipsum dolor
+                                        sit
+                                        amet consectetur, adipisicing elit. Dolorum quidem neque, quo fugit earum facere vero exercitationem minus
+                                        explicabo quae eos alias consequatur, necessitatibus, ea officia labore a dolores fuga repellat quis
+                                        mollitia
+                                        blanditiis reiciendis recusandae totam. Sed, consectetur nulla.
+                                    </p>
+                                    <p>
+                                        <a href="#home-blog-section">Read more</a>
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <a class="move-carousel-icon-container" id="move-right-carousel" href="javascript:void(0)" onclick="moveBlogSliderRight()">
-                        <svg class="blog-carousel-button">
-                            <use xlink:href="#right-arrow-button" href="#right-arrow-button"></use>
-                        </svg>
-                    </a>
+                    <div class="carousel__button-container--left">
+                        <a class="carousel__button" id="move-left-carousel" href="javascript:void(0)" onclick="moveBlogSliderLeft()">
+                            <svg class="carousel__button-svg">
+                                <use xlink:href="#left-arrow-button" href="#left-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="carousel__button-container--right">
+                        <a class="carousel__button" id="move-right-carousel" href="javascript:void(0)" onclick="moveBlogSliderRight()">
+                            <svg class="carousel__button-svg">
+                                <use xlink:href="#right-arrow-button" href="#right-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </section>
             <section id="home-contact-view">
@@ -428,7 +448,7 @@
                         Always open to learning.
                     </h1>
                     <p class="home-contact-title__description">
-                        Please reach out o me if you believe I can controbute to your team's projects. Just clik in <a href="#">this link</a>.
+                        Please reach out o me if you believe I can controbute to your team's projects. Just clik in <a href="mailto:diegoherrera262@gmail.com">this link</a>.
                     </p>
                 </div>
                 <div class="home-contact-image-container">
@@ -454,7 +474,7 @@
                 <p>dieaherreraroj@unal.edu.co</p>
             </div>
             <div class="footer-contact-link-container">
-                <a class="footer-contact__contact-link" href="#">
+                <a class="footer-contact__contact-link" href="mailto:diegoherrera262@gmail.com">
                     Contact me
                 </a>
             </div>

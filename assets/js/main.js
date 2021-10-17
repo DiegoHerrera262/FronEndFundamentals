@@ -6,37 +6,40 @@ closeDropdown = () => {
   document.getElementById("dropdown-menu").style.width = "0";
 };
 
-triggerContactForm = () => {
-  alert("Triggering Contact Form");
-  console.log("Triggering Contact Form");
-};
-
 moveBlogSliderLeft = () => {
-  blogCards = document.getElementById("home-blog-wrapper").children;
-  if (blogCards[0].className !== "blog-card active-post") {
-    for (let idx = 0; idx < blogCards.length - 1; idx++) {
-      // swap classes of 0th and idx-th child
-      [blogCards[idx].className, blogCards[idx + 1].className] = [
-        blogCards[idx + 1].className,
-        blogCards[idx].className,
-      ];
-    }
+  let sliderWindow = document.getElementById("home-carousel-window");
+  let cardsList = document.getElementById("home-carousel-list");
+  /* 
+  motion right only allowed if enough 
+  content to left
+  */
+  let offset = cardsList.offsetLeft;
+  console.log("moving slider to right", offset);
+  if (offset >= 0) {
+    /* 
+    there is not enough room for motion 
+    */
+    return;
   }
+  cardsList.style.left =
+    (cardsList.offsetLeft + sliderWindow.clientWidth).toString() + "px";
 };
 
 moveBlogSliderRight = () => {
-  blogCards = document.getElementById("home-blog-wrapper").children;
-  // periodic exchange of card classes
-  if (
-    blogCards[blogCards.length - 1].className !==
-    "blog-card active-post third-post"
-  ) {
-    for (let idx = 0; idx < blogCards.length - 1; idx++) {
-      // swap classes of 0th and idx-th child
-      [blogCards[0].className, blogCards[idx + 1].className] = [
-        blogCards[idx + 1].className,
-        blogCards[0].className,
-      ];
-    }
+  let sliderWindow = document.getElementById("home-carousel-window");
+  let cardsList = document.getElementById("home-carousel-list");
+  /* 
+  compute the difference between left position
+  of card list and window size
+  */
+  let offset = cardsList.clientWidth + cardsList.offsetLeft;
+  console.log("moving slider to left", offset);
+  if (Math.abs(sliderWindow.clientWidth - offset) < 30) {
+    /* 
+    there is not enough room for motion 
+    */
+    return;
   }
+  cardsList.style.left =
+    (cardsList.offsetLeft - sliderWindow.clientWidth).toString() + "px";
 };
